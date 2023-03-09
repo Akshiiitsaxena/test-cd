@@ -21,14 +21,14 @@ jobs:
           pwd
           ls -alR
 
-  job2:
-    runs-on: ubuntu-latest
-    needs: [job1]
-    steps:
-      - name: print current files
-        run: |
-          pwd
-          ls -aLR
+  # job2:
+  #   runs-on: ubuntu-latest
+  #   needs: [job1]
+  #   steps:
+  #     - name: print current files
+  #       run: |
+  #         pwd
+  #         ls -aLR
 
   job4:
     runs-on: ubuntu-latest
