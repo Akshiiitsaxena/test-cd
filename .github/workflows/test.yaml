@@ -29,3 +29,13 @@ jobs:
         run: |
           pwd
           ls -aLR
+
+  job4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print env variables
+        run: echo $VAR1 $VAR2 $VAR3
+        env:
+          VAR1: Thanks
+          VAR2: You
+          VAR3: printprint
